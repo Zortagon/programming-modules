@@ -4,10 +4,11 @@ PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang paling u
 PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemampuan untuk memproses formulir, mengelola database, dan berintegrasi dengan mudah dengan server web dan database, PHP menjadi bahasa pemrograman pilihan untuk banyak pengembang web. Selain itu, kemampuan untuk membuat fungsi dan kelas sendiri membuat PHP lebih mudah dikembangkan untuk aplikasi yang lebih kompleks.
 
 ## Contents
-- Tipe Data
-    - [NULL](#tipe-data-null)
+- [Tipe Data](#tipe-data) : Berbagai tipe data yang terdapat di bahasa pemrograman PHP.
+    - [NULL](#1.-null)
 
-## **Tipe Data: NULL**
+## Tipe Data
+### **1. NULL**
 Membuat variable yang berisi `NULL`
 ```php
 $name = NULL;
@@ -16,7 +17,7 @@ Mengecek jika variable `NULL`, gunakan function `is_null($<variable>)`
 ```php
 echo (is_null($name));
 ```
-### **Menghapus variabel**
+#### **Menghapus variabel**
 Selain mengubah menjadi `NULLL`, di PHP juga bisa menghapus sebuah variable, caranya dengan menggunakan function `unset($<variable>)`
 ```php
 unset($name);
