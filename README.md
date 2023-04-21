@@ -10,7 +10,7 @@ Repository ini berisi catatan dari berbagai modul bahasa pemrograman mulai dari 
   - [Collection](#)
   - ...
 - PHP
-  - [Fundamental](#)
+  - [Fundamental](https://github.com/Zortagon/programming-modules/blob/main/modules/php/FUNDAMENTALS-PHP.md)
   - [Object Oriented Programming (OOP)](#)
   - ...
 
