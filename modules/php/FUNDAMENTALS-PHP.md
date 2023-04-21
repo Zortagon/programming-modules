@@ -7,6 +7,7 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
 1. [Tipe Data Dalam Bahasa Program PHP](#tipe-data-dalam-bahasa-program-php)
     - [Integer](#1-integer)
     - [Float](#2-float)
+    - [String](#3-string)
 
 # Tipe Data Dalam Bahasa Program PHP
 PHP memiliki beberapa tipe data yang berbeda yang digunakan untuk menyimpan nilai dan informasi. Berikut ini adalah tipe data dalam bahasa pemrograman PHP beserta deskripsi dan ukuran memori yang digunakan:
@@ -98,3 +99,79 @@ echo "Luas lingkaran dengan jari-jari $radius adalah $luas";
 
 Pada contoh di atas, variabel `$pi` dan `$radius` dideklarasikan sebagai tipe data Float. Kemudian nilai dari variabel
 `$luas` dihitung menggunakan rumus luas lingkaran dan dicetak ke layar.
+
+## 3. String
+Pada PHP, sebuah string dapat ditulis menggunakan tanda kutip tunggal ('...') atau tanda kutip ganda ("..."). String 
+yang ditulis dengan tanda kutip tunggal dan ganda memiliki arti yang sama, kecuali jika terdapat karakter khusus yang
+perlu dilakukan escapenya.
+
+String dapat dibuat dengan beberapa cara, di antaranya:
+
+- Dalam tanda kutip tunggal ('...'):
+```php
+$nama = 'John Doe';
+```
+- Dalam tanda kutip ganda ("..."):
+```php
+$nama = "John Doe";
+```
+- Dalam tanda kutip backtick (\`...\`):
+```php
+$nama = `John Doe`;
+```
+> **Note:** Semua cara pembuatan string diatas sama saja
+
+Berikut adalah beberapa contoh penggunaan tipe data String di PHP:
+```php
+// deklarasi string dengan tanda kutip tunggal
+$nama = 'Joko';
+
+// deklarasi string dengan tanda kutip ganda
+$salam = "Halo $nama, apa kabar?";
+
+// output: Halo Joko, apa kabar?
+echo $salam;
+```
+Pada contoh di atas, variabel `$nama` memiliki nilai string "Joko", sedangkan variabel `$salam` memiliki nilai string "Halo
+Joko, apa kabar?". Dalam string `$salam`, terdapat penggunaan variabel `$nama` di dalamnya, yang dikelilingi dengan tanda 
+kutip ganda. Dalam hal ini, PHP akan melakukan substitusi nilai variabel ke dalam string, sehingga variabel `$salam`
+memiliki nilai "Halo Joko, apa kabar?".
+
+Pada PHP terdapat sejumlah fungsi bawaan untuk memanipulasi string. Berikut ini adalah beberapa conto untuk
+memanipulasi string pada PHP:
+
+- **Konkatenasi**: Menggabungkan dua atau lebih string menggunakan operator titik (`.`):
+```php
+$nama_depan = 'John';
+$nama_belakang = 'Doe';
+$nama_lengkap = $nama_depan . ' ' . $nama_belakang;
+echo $nama_lengkap; // Output: John Doe
+```
+- **Pemotongan string**: Memotong sebagian string menggunakan fungsi `substr()`:
+```php
+$nama = 'John Doe';
+$nama_depan = substr($nama, 0, 4);
+echo $nama_depan; // Output: John
+```
+- **Penggantian string**: Mengganti sebagian string menggunakan fungsi `str_replace()`:
+```php
+$kalimat = 'Saya suka makan nasi goreng';
+$kalimat_baru = str_replace('nasi goreng', 'mie goreng', $kalimat);
+echo $kalimat_baru; // Output: Saya suka makan mie goreng
+```
+- **Pencarian string**: Mencari posisi sebuah string menggunakan fungsi `strpos()`:
+```php
+$kalimat = 'Saya suka makan nasi goreng';
+$posisi = strpos($kalimat, 'nasi');
+echo $posisi; // Output: 13
+```
+- **Formatting string**: Memformat string menggunakan fungsi `sprintf()`:
+```php
+$harga = 10000;
+$diskon = 0.1;
+$harga_diskon = $harga * (1 - $diskon);
+echo sprintf('Harga setelah diskon 10%% adalah Rp. %s', number_format($harga_diskon, 0, ',', '.')); // Output: Harga setelah diskon 10% adalah Rp. 9.000
+```
+Selain itu, pada PHP terdapat sejumlah fungsi bawaan untuk memanipulasi string, seperti `strlen()` untuk menghitung
+panjang string, `strtolower()` untuk mengubah semua karakter dalam string menjadi huruf kecil, `strtoupper()` untuk 
+mengubah semua karakter dalam string menjadi huruf besar, dan masih banyak lagi.
