@@ -6,6 +6,7 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
 # Contents
 1. [Tipe Data Dalam Bahasa Program PHP](#tipe-data-dalam-bahasa-program-php)
     - [Integer](#1-integer)
+    - [Float](#2-float)
 
 # Tipe Data Dalam Bahasa Program PHP
 PHP memiliki beberapa tipe data yang berbeda yang digunakan untuk menyimpan nilai dan informasi. Berikut ini adalah tipe data dalam bahasa pemrograman PHP beserta deskripsi dan ukuran memori yang digunakan:
@@ -82,3 +83,18 @@ $angka = 10;
 $angka_float = 10.0;
 $angka_sains = 1e3; // sama dengan 1000
 ```
+
+## 2. Float
+Tipe data Float pada PHP digunakan untuk merepresentasikan bilangan pecahan atau desimal. Float pada PHP memiliki
+presisi sekitar 14 digit dan dapat digunakan untuk menghitung nilai matematika dengan akurasi yang cukup baik.
+
+Contoh penggunaan tipe data Float pada PHP:
+```php
+$pi = 3.14159265359;
+$radius = 2.5;
+$luas = $pi * $radius * $radius;
+echo "Luas lingkaran dengan jari-jari $radius adalah $luas";
+```
+
+Pada contoh di atas, variabel `$pi` dan `$radius` dideklarasikan sebagai tipe data Float. Kemudian nilai dari variabel
+`$luas` dihitung menggunakan rumus luas lingkaran dan dicetak ke layar.
