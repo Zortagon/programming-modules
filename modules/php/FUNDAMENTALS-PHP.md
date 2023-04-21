@@ -247,6 +247,8 @@ if (!$salah) {
   echo "Nilai variabel salah adalah false.";
 }
 ```
+> Kode diatas menggunakan **if statement** ([5. Percabangan dalam PHP]()) dan **operator negasi** ([4. Operator dalam PHP]()).
+
 Output:
 ```shell
 Nilai variabel benar adalah true.
