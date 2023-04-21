@@ -9,7 +9,7 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
     - [Integer](#1-integer)
     - [Float](#2-float)
     - [String](#3-string)
-    - Boolean
+    - [Boolean](#4-boolean)
     - Array
     - Object
     - NULL
@@ -22,6 +22,9 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
    - Operator Penugasan
    - Operator Perbandingan
    - Operator Logika
+5. Percabangan dalam PHP
+   - If-Else
+   - Switch-Case
 
 # Struktur Dasar PHP
 Berikut adalah struktur dasar PHP:
@@ -224,3 +227,32 @@ echo sprintf('Harga setelah diskon 10%% adalah Rp. %s', number_format($harga_dis
 Selain itu, pada PHP terdapat sejumlah fungsi bawaan untuk memanipulasi string, seperti `strlen()` untuk menghitung
 panjang string, `strtolower()` untuk mengubah semua karakter dalam string menjadi huruf kecil, `strtoupper()` untuk 
 mengubah semua karakter dalam string menjadi huruf besar, dan masih banyak lagi.
+
+## 4. Boolean
+
+Tipe data Boolean pada PHP hanya memiliki dua nilai yaitu `true` (benar) dan `false` (salah). Nilai `true` memiliki nilai 
+numerik **1**, sedangkan `false` memiliki nilai numerik **0**.
+
+Contoh penggunaan:
+
+```php
+$benar = true;
+$salah = false;
+
+if ($benar) {
+  echo "Nilai variabel benar adalah true.";
+}
+
+if (!$salah) {
+  echo "Nilai variabel salah adalah false.";
+}
+```
+Output:
+```shell
+Nilai variabel benar adalah true.
+Nilai variabel salah adalah false.
+```
+Pada contoh di atas, variabel `$benar` memiliki nilai true, sehingga kondisi di dalam [if statement]() akan dieksekusi dan 
+menghasilkan output "**Nilai variabel benar adalah true**.". Sementara itu, variabel `$salah` memiliki nilai false, tetapi 
+karena menggunakan [operator negasi]() (`!`), kondisi di dalam [if statement]() menjadi true dan menghasilkan output 
+"**Nilai variabel salah adalah false**.".
