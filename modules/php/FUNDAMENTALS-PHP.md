@@ -4,7 +4,8 @@ PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang paling u
 PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemampuan untuk memproses formulir, mengelola database, dan berintegrasi dengan mudah dengan server web dan database, PHP menjadi bahasa pemrograman pilihan untuk banyak pengembang web. Selain itu, kemampuan untuk membuat fungsi dan kelas sendiri membuat PHP lebih mudah dikembangkan untuk aplikasi yang lebih kompleks.
 
 # Contents
-1. [Tipe Data Dalam Bahasa Program PHP](#tipe-data-dalam-bahasa-program-php)
+1. [Struktur Dasar PHP]()
+2. [Tipe Data Dalam Bahasa Program PHP](#tipe-data-dalam-bahasa-program-php)
     - [Integer](#1-integer)
     - [Float](#2-float)
     - [String](#3-string)
