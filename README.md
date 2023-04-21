@@ -15,4 +15,4 @@ Repository ini berisi catatan dari berbagai modul bahasa pemrograman mulai dari 
   - ...
 
 ## Kontribusi
-Jika Anda ingin berkontribusi dengan menambahkan catatan pada bahasa pemrograman tertentu, silakan membuat pull request pada repository ini. Kami sangat terbuka dengan kontribusi dari siapa saja yang ingin berbagi pengetahuan mereka mengenai bahasa pemrograman. Terima kasih banyak!
+Jika Anda ingin berkontribusi dengan menambahkan catatan pada bahasa pemrograman tertentu, silakan membuat pull request pada repository ini. Kami sangat terbuka dengan kontribusi dari siapa saja yang ingin berbagi pengetahuan mereka mengenai bahasa pemrograman.
