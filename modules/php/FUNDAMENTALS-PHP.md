@@ -10,7 +10,7 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
     - [Float](#2-float)
     - [String](#3-string)
     - [Boolean](#4-boolean)
-    - Array
+    - [Array](#5-array)
     - Object
     - NULL
 3. Variable dan Konstanta
@@ -258,3 +258,59 @@ Pada contoh di atas, variabel `$benar` memiliki nilai true, sehingga kondisi di 
 menghasilkan output "**Nilai variabel benar adalah true**.". Sementara itu, variabel `$salah` memiliki nilai false, tetapi 
 karena menggunakan [operator negasi]() (`!`), kondisi di dalam [if statement]() menjadi true dan menghasilkan output 
 "**Nilai variabel salah adalah false**.".
+
+## 5. Array
+Array pada PHP adalah sebuah tipe data yang digunakan untuk menyimpan sekumpulan nilai atau variabel dalam satu 
+variabel. Array pada PHP memiliki beberapa tipe, yaitu:
+
+- **Indexed Array**
+
+Indexed array adalah tipe array yang menggunakan indeks numerik berupa angka sebagai penunjuk setiap elemen array. 
+Indeks dimulai dari `0` dan seterusnya sesuai dengan jumlah elemen dalam array. Contoh:
+
+```php
+$nama = array("Andi", "Budi", "Cindy");
+echo $nama[0]; // output: Andi
+```
+- **Associative Array**
+
+Associative array adalah tipe array yang menggunakan kunci atau nama sebagai penunjuk setiap elemen array, 
+tidak menggunakan indeks numerik. Contoh:
+
+```php
+$person = array("nama" => "Andi", "umur" => 20, "alamat" => "Jakarta");
+echo $person["nama"]; // output: Andi
+```
+- **Multidimensional Array**
+
+Multidimensional array adalah tipe array yang memiliki lebih dari satu dimensi atau lebih dari satu array di dalam 
+array. Contoh:
+```php
+$nilai = array(
+    array(80, 90, 70),
+    array(75, 85, 95),
+    array(60, 70, 80)
+);
+echo $nilai[1][2]; // output: 95
+```
+Dalam penggunaannya, array pada PHP sangat fleksibel dan dapat digunakan untuk berbagai keperluan seperti menyimpan
+data dari database, menyimpan data sementara dalam program, dan sebagainya.
+
+Di PHP, kita bisa membuat array menggunakan dua cara, yaitu dengan menggunakan `array()` atau `[]`. Kedua cara tersebut
+memiliki hasil yang sama, yaitu membuat array.
+
+- Contoh pembuatan array menggunakan `array()`:
+```php
+$angka = array(1, 2, 3, 4, 5);
+$nama = array('Andi', 'Budi', 'Cindy');
+```
+
+- Contoh pembuatan array menggunakan `[]`:
+
+```php
+$angka = [1, 2, 3, 4, 5];
+$nama = ['Andi', 'Budi', 'Cindy'];
+```
+
+Perlu diingat bahwa cara pembuatan array menggunakan `[]` baru tersedia pada PHP versi **5.4** ke atas. Sehingga, jika 
+menggunakan PHP versi sebelumnya, harus menggunakan cara pembuatan array dengan `array()`.
