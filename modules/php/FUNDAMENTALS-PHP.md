@@ -8,6 +8,10 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
     - [Integer](#1-integer)
     - [Float](#2-float)
     - [String](#3-string)
+    - Boolean
+    - Array
+    - Object
+    - NULL
 
 # Tipe Data Dalam Bahasa Program PHP
 PHP memiliki beberapa tipe data yang berbeda yang digunakan untuk menyimpan nilai dan informasi. Berikut ini adalah tipe data dalam bahasa pemrograman PHP beserta deskripsi dan ukuran memori yang digunakan:
