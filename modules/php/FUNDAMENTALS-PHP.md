@@ -4,7 +4,7 @@ PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang paling u
 PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemampuan untuk memproses formulir, mengelola database, dan berintegrasi dengan mudah dengan server web dan database, PHP menjadi bahasa pemrograman pilihan untuk banyak pengembang web. Selain itu, kemampuan untuk membuat fungsi dan kelas sendiri membuat PHP lebih mudah dikembangkan untuk aplikasi yang lebih kompleks.
 
 # Contents
-1. [Struktur Dasar PHP]()
+1. [Struktur Dasar PHP](#struktur-dasar-php)
 2. [Tipe Data Dalam Bahasa Program PHP](#tipe-data-dalam-bahasa-program-php)
     - [Integer](#1-integer)
     - [Float](#2-float)
@@ -13,6 +13,50 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
     - Array
     - Object
     - NULL
+3. Variable dan Konstanta
+   - Deklarasi Variable
+   - Tipe Data pada Variable
+   - Konstanta
+4. Operator dalam PHP
+   - Operator Aritmatika
+   - Operator Penugasan
+   - Operator Perbandingan
+   - Operator Logika
+
+# Struktur Dasar PHP
+Berikut adalah struktur dasar PHP:
+```php
+<?php
+  // kode PHP di sini
+?>
+```
+- Kode PHP harus dimulai dengan `<?php`
+- Diakhiri dengan `?>` (Tetapi tidak wajib jika di file PHP tersebut tidak ada HTML).
+- Kode PHP dapat ditempatkan di antara kode HTML atau teks biasa.
+- Kode PHP dapat mencetak output ke layar dengan menggunakan fungsi `echo`.
+- Komentar dapat ditulis dengan menggunakan `//` untuk komentar satu baris atau `/* */` untuk komentar beberapa baris.
+
+Berikut beberapa contoh menulis kode PHP:
+```php
+<?php
+echo "Hello World!";
+```
+> Tag penutup `?>` tidak diwajib kan karena diatas hanya ada kode PHP.
+```php
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <?php echo "Hello World"; // Akan print tulisan Hello World pada tag h1 ?>
+    </h1>
+</body>
+</html>
+```
+> Tag penutup `?>` wajib karena kode PHP berada di HTML.
+
 
 # Tipe Data Dalam Bahasa Program PHP
 PHP memiliki beberapa tipe data yang berbeda yang digunakan untuk menyimpan nilai dan informasi. Berikut ini adalah tipe data dalam bahasa pemrograman PHP beserta deskripsi dan ukuran memori yang digunakan:
