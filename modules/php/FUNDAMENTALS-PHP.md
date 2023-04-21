@@ -5,7 +5,7 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
 
 ## Contents
 - Tipe Data
-    - [NULL](#tipe-data:-null)
+    - [NULL](#tipe-data-null)
 
 ## **Tipe Data: NULL**
 Membuat variable yang berisi `NULL`
