@@ -11,7 +11,6 @@ PHP adalah bahasa pemrograman server-side yang kuat dan serbaguna. Dengan kemamp
     - [String](#3-string)
     - [Boolean](#4-boolean)
     - [Array](#5-array)
-    - Object
     - NULL
 3. Variable dan Konstanta
    - Deklarasi Variable
